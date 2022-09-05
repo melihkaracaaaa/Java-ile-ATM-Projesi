@@ -1,9 +1,9 @@
 
-package dongulerle.atm.programı;
+package dongulerle.atm.programi;
 
 import java.util.Scanner;
 
-public class DongulerleATMProgramı {
+public class DongulerleATMProgrami {
 
     public static void main(String[] args) {
     
@@ -11,28 +11,28 @@ public class DongulerleATMProgramı {
     
     int bakiye = 1000;
     
-    String işlemler = "1.İşlem : Bakiye Öğrenme\n"
-                      +"2.İşlem : Para Çekme\n"
-                      +"3.İşlem : Para Yatırma\n"
-                      + " Çıkış için q'a basın";
+    String islemler = "1.İslem : Bakiye Ogrenme\n"
+                      +"2.İslem : Para Cekme\n"
+                      +"3.İslem : Para Yatirma\n"
+                      + " Cikis icin q'a basin";
         System.out.println("*************************");
-        System.out.println(işlemler);
+        System.out.println(islemler);
         System.out.println("*************************");
         
         while (true) {
             
-            System.out.print("İşlemi seçiniz :");
+            System.out.print("İslemi seciniz :");
             String işlem = scanner.nextLine();
             
-            if (işlem.equals("q"))  {
-                System.out.println("Programdan çıkılıyor...");
+            if (islem.equals("q"))  {
+                System.out.println("Programdan cikiliyor...");
                 break;
             }
-            else if (işlem.equals("1")) {
+            else if (islem.equals("1")) {
                 System.out.println("Bakiyeniz : " + bakiye);
             }
-            else if (işlem.equals("2")) {    
-                System.out.print("Çekmek istediğiniz tutar? : ");
+            else if (islem.equals("2")) {    
+                System.out.print("Cekmek istediginiz tutar? : ");
                 int tutar = scanner.nextInt();
                 scanner.nextLine();
                 
@@ -42,15 +42,15 @@ public class DongulerleATMProgramı {
                   }
                 else {
                     bakiye -= tutar;
-                    System.out.println("Güncel Bakiyeniz :" + bakiye);
+                    System.out.println("Guncel Bakiyeniz :" + bakiye);
                     
                         
                 }
                 
                 
             }    
-            else if (işlem.equals("3")) {   
-                System.out.print("Yatırmak istediğiniz tutar? : ");
+            else if (islem.equals("3")) {   
+                System.out.print("Yatirmak istediginiz tutar? : ");
                 int tutar = scanner.nextInt();
                 scanner.nextLine();
                 
@@ -61,7 +61,7 @@ public class DongulerleATMProgramı {
             }
             
             else {
-                System.out.println("Geçersiz İşlem...");
+                System.out.println("Gecersiz İslem...");
                 
                 
             }
